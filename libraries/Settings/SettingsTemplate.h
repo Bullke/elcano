@@ -34,22 +34,18 @@ VEHICLE_NUMBER to your own new number.
 #define MAX_ACC_OUT 235
 
 // MIN and MAX BRAKE_OUT set values to be sent to the brake actuator that controls the brakes on the front wheels
-#define MIN_BRAKE_OUT 160
-#define MAX_BRAKE_OUT 207
-#define MIN_BRAKE_US 1250  // ex. MIN_BRAKE_MS
-#define MAX_BRAKE_US 1980  // ex. MAX_BRAKE_MS
+#define MIN_BRAKE_OUT 202
+#define MAX_BRAKE_OUT 250
 
 // RIGHT, STRAIGHT, and LEFT TURN_OUT set values to be sent to the steer actuator that changes the direction of the front wheels
-#define RIGHT_TURN_OUT 240
-#define LEFT_TURN_OUT 140
-#define STRAIGHT_TURN_OUT 196
+#define RIGHT_TURN_OUT 229
+#define LEFT_TURN_OUT 127
+#define STRAIGHT_TURN_OUT 178
 
 // RIGHT, STRAIGHT, and LEFT TURN_MS are pulse widths in msec received from the RC controller
-#define WHEEL_MAX_LEFT_US 1000  // ex. RIGHT_TURN_OUT
-#define WHEEL_MAX_RIGHT_US 2000  // ex. LEFT_TURN_OUT
-#define WHEEL_STRAIGHT_US 1500  // ex. STRAIGHT_TURN_OUT
-
-#define WHEEL_STRAIGHT_SENSOR 350
+#define RIGHT_TURN_MS 1000
+#define LEFT_TURN_MS 2000
+#define STRAIGHT_TURN_MS 1500
 
 // Turn sensors are believed if they are in this range while wheels are straight
 // These numbers vary considerably, depending on which sensor angle is set to straight.
@@ -62,7 +58,7 @@ VEHICLE_NUMBER to your own new number.
 // Output to motor actuator
 #define DAC_CHANNEL 0
 // Output to steer actuator
-#define STEER_OUT_PIN 7
+#define STEER_OUT_PIN 9
 // Output to brake actuator
 #define BRAKE_OUT_PIN 6
 // DISK_BRAKE is deprecated, use BRAKE_OUT_PIN
@@ -155,7 +151,7 @@ VEHICLE_NUMBER to your own new number.
 // Trike specific pins/channels
 #define DAC_CHANNEL 0
 // Output to steer actuator
-#define STEER_OUT_PIN 9
+#define STEER_OUT_PIN 7
 // Output to brake actuator
 #define BRAKE_OUT_PIN 8
 
